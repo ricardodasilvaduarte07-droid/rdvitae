@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RD Vitae – Criador de Currículo Online Grátis | Gere seu PDF em Segundos</title>
+    <meta name="description" content="Crie seu currículo profissional online 100% grátis. Preencha seus dados e baixe em PDF em segundos. Sem cadastro, sem complicação. RD Vitae." />
+    <meta name="keywords" content="currículo online grátis, criar currículo, currículo PDF, gerador de currículo, currículo profissional, currículo primeiro emprego, currículo jovem aprendiz" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="RD Vitae" />
+    <meta name="theme-color" content="#2a7de1" />
+    <link rel="canonical" href="https://rdvitae.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="RD Vitae – Criador de Currículo Online Grátis" />
+    <meta property="og:description" content="Crie seu currículo profissional online 100% grátis e baixe em PDF em segundos. Sem cadastro." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rdvitae.com/" />
+    <meta property="og:image" content="https://rdvitae.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="RD Vitae" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RD Vitae – Criador de Currículo Online Grátis" />
+    <meta name="twitter:description" content="Crie seu currículo profissional online 100% grátis e baixe em PDF em segundos." />
+    <meta name="twitter:image" content="https://rdvitae.com/og-image.jpg" />
+
+    <!-- Google AdSense (substitua XXXXXXXXXXXXXXXX pelo seu Publisher ID) -->
+    <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+    <!-- Security Headers via meta (complemento ao servidor) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=self, microphone=(), geolocation=()" />
+
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <!-- jsPDF -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+
+    <!-- Schema.org: WebApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "RD Vitae",
+        "url": "https://rdvitae.com/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Criador de currículo profissional online gratuito. Gere seu PDF em segundos, sem cadastro.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+        "inLanguage": "pt-BR",
+        "author": {
+            "@type": "Organization",
+            "name": "RD Vitae",
+            "url": "https://rdvitae.com/",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "contato@rdvitae.com",
+                "contactType": "customer support"
+            }
+        }
+    }
+    </script>
+
+    <!-- Schema.org: FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "O RD Vitae é realmente gratuito?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim, o RD Vitae é 100% gratuito. Não é necessário cadastro, cartão de crédito ou pagamento de qualquer tipo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Meus dados ficam salvos na internet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Não. Todos os dados que você preenche são processados localmente no seu navegador e nunca são enviados para nossos servidores."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Em quais formatos posso baixar meu currículo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Atualmente o RD Vitae gera currículos em formato PDF, pronto para enviar para empresas ou imprimir."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://rdvitae.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Criar Currículo",
+                "item": "https://rdvitae.com/#gerador"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* ===== RESET ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --azul: #2a7de1;
+            --azul-escuro: #1e5fa8;
+            --navy: #0f3b5e;
+            --texto: #1e293b;
+            --texto-leve: #475569;
+            --borda: #e2e8f0;
+            --fundo: #f8fafc;
+            --branco: #ffffff;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--fundo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .hidden { display: none !important; }
+
+        /* ===== SKIP LINK (acessibilidade) ===== */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--azul);
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 9999;
+            border-radius: 0 0 8px 0;
+            font-weight: 600;
+            transition: top 0.2s;
+        }
+        .skip-link:focus { top: 0; }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--branco);
+            padding: 14px 0;
+            border-bottom: 1px solid var(--borda);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 4px rgba(0,0,0,.05);
+        }
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: var(--navy);
+            letter-spacing: -.5px;
+        }
+        .logo span { color: var(--azul); }
+        nav[aria-label="Menu principal"] .nav-links {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            font-weight: 500;
+            font-size: 0.875rem;
+            list-style: none;
+        }
+        nav[aria-label="Menu principal"] .nav-links a {
+            color: var(--texto-leve);
+            transition: color 0.2s;
+            padding: 4px 0;
+        }
+        nav[aria-label="Menu principal"] .nav-links a:hover,
+        nav[aria-label="Menu principal"] .nav-links a:focus {
+            color: var(--azul);
+            outline: 2px solid var(--azul);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        /* ===== BOTÕES ===== */
+        .btn-primary {
+            background: var(--azul);
+            color: var(--branco);
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-weight: 600;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            display: inline-block;
+            font-family: inherit;
+        }
+        .btn-primary:hover { background: var(--azul-escuro); }
+        .btn-primary:focus {
+            outline: 3px solid var(--azul);
+            outline-offset: 3px;
+        }
+        .btn-secondary {
+            background: var(--branco);
+            color: var(--texto);
+            border: 1.5px solid #d0d8e0;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-block;
+            font-family: inherit;
+        }
+        .btn-secondary:hover {
+            border-color: var(--azul);
+            background: #f1f6fd;
+        }
+        .btn-secondary:focus {
+            outline: 3px solid var(--azul);
+            outline-offset: 3px;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            text-align: center;
+            padding: 56px 0 32px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+        .hero h1 span { color: var(--azul); }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--texto-leve);
+            max-width: 580px;
+            margin: 14px auto 28px;
+        }
+
+        /* ===== BADGES DE FEATURES ===== */
+        .features-badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 18px 0 0;
+        }
+        .badge {
+            background: #eef4fd;
+            color: var(--azul);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 30px;
+            border: 1px solid #c5d9f5;
+        }
+
+        /* ===== ANÚNCIO ===== */
+        .ad-slot {
+            text-align: center;
+            margin: 20px 0;
+            min-height: 90px;
+            background: #f1f5f9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.75rem;
+        }
+
+        /* ===== FORM ===== */
+        .form-card {
+            background: var(--branco);
+            border-radius: 24px;
+            padding: 32px 34px;
+            box-shadow: 0 4px 24px rgba(0,0,0,.05);
+            border: 1px solid #eef2f6;
+            margin-bottom: 24px;
+        }
+        .form-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--navy);
+        }
+        .form-section-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: var(--azul);
+            margin: 20px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--borda);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px 20px;
+        }
+        .form-group { display: flex; flex-direction: column; }
+        .form-group.full { grid-column: 1 / -1; }
+        .form-group label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #334155;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 10px 14px;
+            border: 1.5px solid #dce1e9;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            background: #fafcff;
+            color: var(--texto);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--azul);
+            box-shadow: 0 0 0 3px rgba(42,125,225,.1);
+        }
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .char-counter {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-align: right;
+            margin-top: 3px;
+        }
+        .form-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* ===== FOTO ===== */
+        .foto-upload {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .foto-preview {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            border: 3px solid var(--borda);
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #94a3b8;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .foto-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .upload-buttons { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+        .upload-buttons label {
+            background: #f1f5f9;
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1.5px solid #dce1e9;
+            transition: all 0.2s;
+            color: #334155;
+        }
+        .upload-buttons label:hover, .upload-buttons label:focus-within {
+            background: #e2e8f0;
+            border-color: var(--azul);
+        }
+        .upload-buttons input[type="file"] {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+        }
+        .btn-remover-foto {
+            background: none;
+            border: none;
+            color: #ef4444;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.8rem;
+            padding: 4px 0;
+        }
+        .btn-remover-foto:hover { text-decoration: underline; }
+        .foto-hint {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+
+        /* ===== PREVIEW ===== */
+        .preview-area {
+            background: var(--branco);
+            border-radius: 24px;
+            padding: 28px 32px;
+            border: 1px solid #eef2f6;
+            margin: 24px 0;
+            box-shadow: 0 4px 24px rgba(0,0,0,.04);
+        }
+        .preview-area h2 {
+            font-size: 1.2rem;
+            margin-bottom: 18px;
+            color: var(--navy);
+        }
+        .curriculo-preview {
+            background: #f9fcff;
+            padding: 24px 28px;
+            border-radius: 16px;
+            border-left: 5px solid var(--azul);
+        }
+        .curriculo-preview .cabecalho {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+        .foto-circular {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--azul);
+            background: #eef4fa;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #94a3b8;
+        }
+        .info-nome h2 { font-size: 1.5rem; }
+        .meta {
+            color: var(--texto-leve);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            font-size: 0.88rem;
+            margin-top: 5px;
+        }
+        .meta span {
+            background: #eef4fa;
+            padding: 2px 12px;
+            border-radius: 30px;
+        }
+        .bloco { margin-top: 14px; }
+        .bloco h3 {
+            font-weight: 700;
+            color: var(--navy);
+            border-bottom: 1px solid #dce6f0;
+            padding-bottom: 4px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+        .bloco p {
+            white-space: pre-wrap;
+            font-size: 0.93rem;
+            color: #334155;
+        }
+        .preview-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-section {
+            margin: 30px 0;
+        }
+        .faq-section h2 {
+            font-size: 1.6rem;
+            color: var(--navy);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .faq-item {
+            background: var(--branco);
+            border-radius: 14px;
+            border: 1px solid var(--borda);
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .faq-item summary {
+            padding: 16px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '+'; font-size: 1.2rem; color: var(--azul); }
+        .faq-item[open] summary::after { content: '−'; }
+        .faq-item p {
+            padding: 0 20px 16px;
+            color: var(--texto-leve);
+            font-size: 0.9rem;
+        }
+
+        /* ===== PÁGINAS LEGAIS ===== */
+        .page-content {
+            background: var(--branco);
+            border-radius: 24px;
+            padding: 32px 36px;
+            margin: 24px 0;
+            border: 1px solid #eef2f6;
+        }
+        .page-content h2 {
+            font-size: 1.8rem;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+        .page-content h3 {
+            margin-top: 22px;
+            color: #1e3a5a;
+            font-size: 1.05rem;
+        }
+        .page-content p { margin: 10px 0; color: #334155; }
+        .page-content ul { margin: 10px 0 10px 20px; color: #334155; }
+        .page-content ul li { margin-bottom: 6px; }
+        .update-date {
+            color: #64748b;
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+        }
+
+        /* ===== COOKIE BANNER ===== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0f1e2e;
+            color: #e2e8f0;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            z-index: 999;
+            border-top: 3px solid var(--azul);
+            transform: translateY(100%);
+            transition: transform 0.35s ease;
+        }
+        .cookie-banner.show { transform: translateY(0); }
+        .cookie-banner p { font-size: 0.85rem; max-width: 680px; }
+        .cookie-banner a { color: #60a5fa; text-decoration: underline; }
+        .btn-cookie {
+            background: var(--azul);
+            color: #fff;
+            border: none;
+            padding: 9px 26px;
+            border-radius: 40px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            font-family: inherit;
+        }
+        .btn-cookie:hover { background: var(--azul-escuro); }
+        .btn-cookie-recusar {
+            background: none;
+            border: 1px solid #475569;
+            color: #94a3b8;
+            padding: 9px 20px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+        .btn-cookie-recusar:hover { border-color: #94a3b8; color: #e2e8f0; }
+        .cookie-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #0f1e2e;
+            color: #b6c8db;
+            padding: 28px 0;
+            margin-top: 40px;
+            border-radius: 24px 24px 0 0;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.85rem;
+        }
+        footer a { color: #b6c8db; transition: color 0.2s; }
+        footer a:hover { color: #fff; }
+        .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+        /* ===== LEGAL NOTE ===== */
+        .legal-note {
+            background: #f1f5f9;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            color: #475569;
+            margin-top: 12px;
+            border-left: 4px solid var(--azul);
+        }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .header-flex { flex-direction: column; gap: 8px; }
+            nav[aria-label="Menu principal"] .nav-links { justify-content: center; gap: 10px; }
+            .form-card { padding: 20px 16px; }
+            .page-content { padding: 20px 16px; }
+            .preview-area { padding: 16px; }
+            .curriculo-preview { padding: 16px; }
+            .form-actions { flex-direction: column; }
+            .form-actions .btn-primary,
+            .form-actions .btn-secondary { text-align: center; width: 100%; }
+            .cookie-banner { flex-direction: column; text-align: center; }
+            .cookie-actions { justify-content: center; }
+            footer .container { flex-direction: column; align-items: center; text-align: center; }
+            .footer-links { justify-content: center; }
+            .foto-upload { flex-direction: column; align-items: flex-start; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.6rem; }
+            .hero p { font-size: 1rem; }
+        }
+
+        /* ===== PRINT ===== */
+        @media print {
+            header, footer, .cookie-banner, .form-actions, .preview-actions, .ad-slot { display: none !important; }
+            .curriculo-preview { border: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Skip link para acessibilidade -->
+    <a href="#gerador" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- ===== COOKIE BANNER ===== -->
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookieTitle" aria-live="polite">
+        <p id="cookieTitle">🍪 Usamos cookies essenciais e de publicidade (Google AdSense) para manter o site gratuito. Veja nossa <a href="#politica-cookies">Política de Cookies</a> e <a href="#privacidade">Privacidade</a>.</p>
+        <div class="cookie-actions">
+            <button class="btn-cookie" id="aceitarCookies">Aceitar todos</button>
+            <button class="btn-cookie-recusar" id="recusarCookies">Apenas essenciais</button>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header role="banner">
+        <div class="container header-flex">
+            <a href="/" class="logo" aria-label="RD Vitae – Página inicial">RD<span>Vitae</span></a>
+            <nav aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="#gerador">Criar Currículo</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#privacidade">Privacidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <h1 id="hero-heading">Crie seu <span>Currículo Profissional</span><br>Grátis em PDF</h1>
+                <p>Preencha seus dados, visualize e baixe em segundos. Sem cadastro, sem complicação.</p>
+                <a href="#gerador" class="btn-primary">👉 Criar Currículo Agora</a>
+                <div class="features-badges" aria-label="Características">
+                    <span class="badge">✅ 100% Grátis</span>
+                    <span class="badge">🔒 Dados locais</span>
+                    <span class="badge">📄 PDF profissional</span>
+                    <span class="badge">📱 Mobile</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anúncio topo (AdSense) -->
+        <div class="container">
+            <div class="ad-slot" aria-label="Publicidade">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="SLOT_ID_TOPO"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+            </div>
+        </div>
+
+        <!-- ===== GERADOR ===== -->
+        <section id="gerador" class="container" aria-labelledby="gerador-heading">
+            <div class="form-card">
+                <h2 id="gerador-heading">📄 Preencha seus dados</h2>
+
+                <p class="form-section-title">Dados pessoais</p>
+                <form id="curriculoForm" novalidate>
+                    <div class="form-row">
+
+                        <!-- FOTO -->
+                        <div class="form-group full">
+                            <label>Foto (opcional)</label>
+                            <div class="foto-upload">
+                                <div class="foto-preview" id="fotoPreview" aria-label="Pré-visualização da foto" role="img">
+                                    <span aria-hidden="true">📷</span>
+                                </div>
+                                <div>
+                                    <div class="upload-buttons">
+                                        <label for="fotoArquivo">📁 Escolher arquivo</label>
+                                        <input type="file" id="fotoArquivo" accept="image/jpeg,image/png,image/webp,image/gif" aria-label="Selecionar foto do arquivo" />
+                                        <label for="fotoCamera">📷 Usar câmera</label>
+                                        <input type="file" id="fotoCamera" accept="image/*" capture="user" aria-label="Tirar foto com câmera" />
+                                        <button type="button" class="btn-remover-foto" id="removerFoto" aria-label="Remover foto">Remover</button>
+                                    </div>
+                                    <p class="foto-hint">JPG, PNG ou WEBP · Máx. 5 MB · Recomendado: fundo neutro</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nome">Nome completo <abbr title="obrigatório" aria-label="obrigatório">*</abbr></label>
+                            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Ana Silva" maxlength="80" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail <abbr title="obrigatório" aria-label="obrigatório">*</abbr></label>
+                            <input type="email" id="email" name="email" required autocomplete="email" placeholder="ana@email.com" maxlength="120" />
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(11) 99999-9999" maxlength="20" />
+                        </div>
+                        <div class="form-group">
+                            <label for="linkedin">LinkedIn (URL ou usuário)</label>
+                            <input type="text" id="linkedin" name="linkedin" placeholder="linkedin.com/in/ana-silva" maxlength="120" />
+                        </div>
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" autocomplete="address-level2" placeholder="São Paulo" maxlength="60" />
+                        </div>
+                        <div class="form-group">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" name="estado" autocomplete="address-level1" placeholder="SP" maxlength="30" />
+                        </div>
+                        <div class="form-group full">
+                            <label for="objetivo">Objetivo profissional</label>
+                            <input type="text" id="objetivo" name="objetivo" placeholder="Ex.: Desenvolvedora Full Stack com foco em React e Node.js" maxlength="150" />
+                            <span class="char-counter" id="objetivoCounter">0 / 150</span>
+                        </div>
+                    </div>
+
+                    <p class="form-section-title">Experiência & Formação</p>
+                    <div class="form-row">
+                        <div class="form-group full">
+                            <label for="experiencia">Experiência profissional</label>
+                            <textarea id="experiencia" name="experiencia" rows="4" placeholder="2022–Atual · Empresa XYZ · Cargo&#10;Descreva suas responsabilidades e conquistas..." maxlength="1500"></textarea>
+                            <span class="char-counter" id="expCounter">0 / 1500</span>
+                        </div>
+                        <div class="form-group full">
+                            <label for="formacao">Formação acadêmica</label>
+                            <textarea id="formacao" name="formacao" rows="2" placeholder="Bacharelado em Ciência da Computação · Universidade XYZ · 2020" maxlength="600"></textarea>
+                        </div>
+                    </div>
+
+                    <p class="form-section-title">Habilidades & Idiomas</p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="habilidades">Habilidades</label>
+                            <input type="text" id="habilidades" name="habilidades" placeholder="JavaScript, Python, Gestão de projetos..." maxlength="200" />
+                        </div>
+                        <div class="form-group">
+                            <label for="idiomas">Idiomas</label>
+                            <input type="text" id="idiomas" name="idiomas" placeholder="Inglês fluente, Espanhol básico" maxlength="120" />
+                        </div>
+                        <div class="form-group full">
+                            <label for="cursos">Cursos e certificações</label>
+                            <input type="text" id="cursos" name="cursos" placeholder="Google Analytics, AWS Cloud Practitioner..." maxlength="200" />
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-primary" id="gerarBtn">👁️ Visualizar Currículo</button>
+                        <button type="button" class="btn-secondary" id="baixarPdfBtn">📥 Baixar PDF direto</button>
+                    </div>
+                    <div class="legal-note" role="note">
+                        🔒 <strong>Privacidade garantida:</strong> Seus dados são processados somente no seu navegador. Nada é enviado para nossos servidores.
+                    </div>
+                </form>
+            </div>
+
+            <!-- PREVIEW -->
+            <div id="previewArea" class="preview-area hidden" role="region" aria-label="Pré-visualização do currículo" aria-live="polite">
+                <h2>👁️ Pré-visualização do currículo</h2>
+                <div id="curriculoPreview" class="curriculo-preview"></div>
+                <div class="preview-actions">
+                    <button class="btn-secondary" id="editarBtn">✏️ Editar dados</button>
+                    <button class="btn-primary" id="baixarPdfPreviewBtn">📥 Baixar PDF</button>
+                </div>
+            </div>
+
+            <!-- Anúncio meio -->
+            <div class="ad-slot" aria-label="Publicidade">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="SLOT_ID_MEIO"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section id="faq" class="container faq-section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">❓ Perguntas Frequentes</h2>
+
+            <details class="faq-item">
+                <summary>O RD Vitae é realmente gratuito?</summary>
+                <p>Sim! O RD Vitae é 100% gratuito. Não exigimos cadastro, cartão de crédito ou qualquer pagamento. Mantemos o serviço gratuito por meio de publicidade (Google AdSense).</p>
+            </details>
+            <details class="faq-item">
+                <summary>Meus dados ficam salvos na internet?</summary>
+                <p>Não. Todos os dados que você preenche são processados localmente no seu navegador. Eles nunca são enviados para nossos servidores. Ao fechar o navegador, os dados são apagados.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Posso usar no celular?</summary>
+                <p>Sim! O RD Vitae é totalmente responsivo e funciona bem em smartphones e tablets com qualquer navegador moderno.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Posso adicionar minha foto ao currículo?</summary>
+                <p>Sim. Você pode fazer upload de uma foto ou tirar uma foto com a câmera do celular. A foto é processada localmente e incluída no PDF gerado.</p>
+            </details>
+            <details class="faq-item">
+                <summary>O currículo gerado é aceito pelas empresas?</summary>
+                <p>O PDF gerado segue as boas práticas de layout profissional. A aceitação por empresas depende do conteúdo que você preenche – quanto mais completo e honesto, melhor suas chances.</p>
+            </details>
+        </section>
+
+        <!-- ===== SOBRE ===== -->
+        <section id="sobre" class="container" aria-labelledby="sobre-heading">
+            <div class="page-content">
+                <h2 id="sobre-heading">Sobre o RD Vitae</h2>
+                <p class="update-date">Última atualização: junho de 2026</p>
+                <p>O <strong>RD Vitae</strong> é um gerador de currículos online gratuito desenvolvido para ajudar candidatos brasileiros a criar um currículo profissional de forma rápida e sem complicações.</p>
+                <p><strong>100% gratuito</strong> · <strong>Sem cadastro</strong> · <strong>Dados processados localmente</strong></p>
+                <h3>Responsável</h3>
+                <p>Equipe RD Vitae — <a href="mailto:contato@rdvitae.com" style="color:var(--azul);">contato@rdvitae.com</a></p>
+                <h3>Serviços de terceiros utilizados</h3>
+                <ul>
+                    <li><strong>Google Fonts:</strong> carregamento de fontes tipográficas. O Google pode registrar o IP do visitante.</li>
+                    <li><strong>Google AdSense:</strong> exibição de anúncios para manter o serviço gratuito. O Google pode usar cookies para personalização de anúncios.</li>
+                    <li><strong>jsPDF (Cloudflare CDN):</strong> biblioteca JavaScript para geração do PDF. A Cloudflare pode registrar o IP do visitante.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== POLÍTICA DE COOKIES ===== -->
+        <section id="politica-cookies" class="container" aria-labelledby="cookies-heading">
+            <div class="page-content">
+                <h2 id="cookies-heading">🍪 Política de Cookies</h2>
+                <p class="update-date">Última atualização: junho de 2026</p>
+                <p>O RD Vitae utiliza cookies para funcionar corretamente e para exibição de publicidade que mantém o serviço gratuito.</p>
+                <h3>O que são cookies?</h3>
+                <p>Cookies são pequenos arquivos de texto gravados pelo seu navegador para lembrar preferências e permitir o funcionamento de serviços.</p>
+                <h3>Cookies que utilizamos</h3>
+                <ul>
+                    <li><strong>Essenciais:</strong> <code>rdvitae_cookies</code> – armazena sua preferência de consentimento de cookies.</li>
+                    <li><strong>Publicidade (Google AdSense):</strong> cookies do Google para exibir anúncios relevantes. O Google pode usar esses dados para personalização com base em outros sites visitados. Consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--azul);">Política de Privacidade do Google</a>.</li>
+                    <li><strong>Fontes (Google Fonts):</strong> o Google Fonts pode registrar seu endereço IP ao carregar as fontes tipográficas do site.</li>
+                </ul>
+                <h3>Como gerenciar</h3>
+                <p>Você pode recusar cookies não essenciais clicando em "Apenas essenciais" no banner de cookies, ou desativá-los nas configurações do seu navegador. Isso pode afetar a exibição de anúncios.</p>
+            </div>
+        </section>
+
+        <!-- ===== PRIVACIDADE ===== -->
+        <section id="privacidade" class="container" aria-labelledby="privacidade-heading">
+            <div class="page-content">
+                <h2 id="privacidade-heading">Política de Privacidade</h2>
+                <p class="update-date">Última atualização: junho de 2026</p>
+                <p>Em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018)</strong>, informamos como tratamos seus dados.</p>
+                <h3>Dados do formulário de currículo</h3>
+                <p>Os dados que você preenche (nome, e-mail, telefone, cidade, estado, objetivo, experiência, formação, habilidades, idiomas e foto) são processados <strong>exclusivamente no seu navegador</strong> para gerar o PDF do currículo. Esses dados <strong>não são enviados, coletados ou armazenados</strong> em nossos servidores.</p>
+                <h3>Serviços de terceiros e dados compartilhados</h3>
+                <ul>
+                    <li><strong>Google AdSense:</strong> exibe anúncios e pode coletar dados sobre sua navegação por meio de cookies. O Google atua como controlador independente desses dados. Consulte: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--azul);">policies.google.com/privacy</a></li>
+                    <li><strong>Google Fonts:</strong> ao carregar as fontes, seu endereço IP é enviado aos servidores do Google. Consulte: <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--azul);">developers.google.com/fonts/faq/privacy</a></li>
+                    <li><strong>Cloudflare CDN (jsPDF):</strong> a biblioteca de PDF é carregada via Cloudflare, que pode registrar seu IP para fins de segurança e entrega de conteúdo.</li>
+                </ul>
+                <h3>Seus direitos (LGPD)</h3>
+                <ul>
+                    <li>Acesso, correção ou exclusão dos seus dados</li>
+                    <li>Revogação de consentimento a qualquer momento</li>
+                    <li>Informação sobre compartilhamento com terceiros</li>
+                </ul>
+                <p>Para exercer seus direitos, entre em contato: <a href="mailto:contato@rdvitae.com" style="color:var(--azul);">contato@rdvitae.com</a></p>
+                <h3>Responsável pelo tratamento (DPO)</h3>
+                <p>Equipe RD Vitae — <a href="mailto:contato@rdvitae.com" style="color:var(--azul);">contato@rdvitae.com</a></p>
+            </div>
+        </section>
+
+        <!-- ===== TERMOS ===== -->
+        <section id="termos" class="container" aria-labelledby="termos-heading">
+            <div class="page-content">
+                <h2 id="termos-heading">Termos de Uso</h2>
+                <p class="update-date">Última atualização: junho de 2026</p>
+                <p>Ao utilizar o RD Vitae, você concorda com os termos abaixo:</p>
+                <ul>
+                    <li><strong>Uso responsável:</strong> utilize apenas para fins legítimos de criação de currículos.</li>
+                    <li><strong>Veracidade:</strong> você é responsável pela veracidade das informações inseridas.</li>
+                    <li><strong>Propriedade intelectual:</strong> o conteúdo do currículo gerado é de sua propriedade. O código e design do RD Vitae pertencem à equipe RD Vitae.</li>
+                    <li><strong>Limitação de responsabilidade:</strong> o site é fornecido "como está". Não nos responsabilizamos por decisões de contratação baseadas nos currículos gerados.</li>
+                    <li><strong>Publicidade:</strong> o site exibe anúncios do Google AdSense. Não nos responsabilizamos pelo conteúdo dos anúncios exibidos.</li>
+                </ul>
+                <h3>Alterações</h3>
+                <p>Estes termos podem ser atualizados periodicamente. O uso contínuo implica aceitação das alterações.</p>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO ===== -->
+        <section id="contato" class="container" aria-labelledby="contato-heading">
+            <div class="page-content">
+                <h2 id="contato-heading">Contato</h2>
+                <p>Dúvidas, sugestões ou suporte? Fale com a gente:</p>
+                <p><strong>E-mail:</strong> <a href="mailto:contato@rdvitae.com" style="color:var(--azul);font-weight:600;">contato@rdvitae.com</a></p>
+                <p><strong>Tempo de resposta:</strong> até 48 horas úteis.</p>
+                <p><strong>Responsável:</strong> Equipe RD Vitae</p>
+            </div>
+        </section>
+
+        <!-- Anúncio rodapé -->
+        <div class="container">
+            <div class="ad-slot" aria-label="Publicidade">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="SLOT_ID_RODAPE"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div>© 2026 RD Vitae · Todos os direitos reservados</div>
+            <nav aria-label="Links do rodapé">
+                <ul class="footer-links" style="list-style:none;">
+                    <li><a href="#gerador">Gerador</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
+                    <li><a href="#privacidade">Privacidade</a></li>
+                    <li><a href="#politica-cookies">Cookies</a></li>
+                    <li><a href="#termos">Termos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+    (function () {
+        'use strict';
+
+        // ===== COOKIE BANNER =====
+        var banner = document.getElementById('cookieBanner');
+        var btnAceitar = document.getElementById('aceitarCookies');
+        var btnRecusar = document.getElementById('recusarCookies');
+
+        function hideBanner() { banner.classList.remove('show'); }
+
+        if (!localStorage.getItem('rdvitae_cookies')) {
+            banner.classList.add('show');
+        }
+        btnAceitar.addEventListener('click', function () {
+            localStorage.setItem('rdvitae_cookies', 'all');
+            hideBanner();
+            ativarAdsense();
+        });
+        btnRecusar.addEventListener('click', function () {
+            localStorage.setItem('rdvitae_cookies', 'essential');
+            hideBanner();
+        });
+
+        function ativarAdsense() {
+            // Ativa os slots apenas após consentimento explícito
+            document.querySelectorAll('.adsbygoogle').forEach(function (el) {
+                try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+            });
+        }
+        // Se já consentiu com tudo, ativa AdSense
+        if (localStorage.getItem('rdvitae_cookies') === 'all') {
+            window.addEventListener('load', ativarAdsense);
+        }
+
+        // ===== ESCAPE HTML (XSS prevention) =====
+        function esc(text) {
+            if (!text) return '';
+            return String(text)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        // ===== FOTO =====
+        var fotoDataURL = null;
+        var fotoPreview = document.getElementById('fotoPreview');
+
+        function setFoto(dataURL) {
+            fotoDataURL = dataURL;
+            if (dataURL) {
+                fotoPreview.innerHTML = '<img src="' + dataURL + '" alt="Foto do candidato" />';
+            } else {
+                fotoPreview.innerHTML = '<span aria-hidden="true">📷</span>';
+            }
+        }
+
+        function comprimirImagem(file, callback) {
+            var MAX_DIM = 400;
+            var QUALIDADE = 0.82;
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var img = new Image();
+                img.onload = function () {
+                    var w = img.width, h = img.height;
+                    if (w > MAX_DIM || h > MAX_DIM) {
+                        var ratio = Math.min(MAX_DIM / w, MAX_DIM / h);
+                        w = Math.round(w * ratio);
+                        h = Math.round(h * ratio);
+                    }
+                    var canvas = document.createElement('canvas');
+                    canvas.width = w;
+                    canvas.height = h;
+                    var ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, w, h);
+                    callback(canvas.toDataURL('image/jpeg', QUALIDADE));
+                };
+                img.onerror = function () { alert('Não foi possível carregar a imagem. Tente outro arquivo.'); };
+                img.src = e.target.result;
+            };
+            reader.onerror = function () { alert('Erro ao ler o arquivo.'); };
+            reader.readAsDataURL(file);
+        }
+
+        function handleFotoInput(input) {
+            input.addEventListener('change', function () {
+                var file = this.files && this.files[0];
+                if (!file) return;
+                if (file.size > 5 * 1024 * 1024) {
+                    alert('Arquivo muito grande. Máximo: 5 MB.');
+                    this.value = '';
+                    return;
+                }
+                comprimirImagem(file, setFoto);
+            });
+        }
+        handleFotoInput(document.getElementById('fotoArquivo'));
+        handleFotoInput(document.getElementById('fotoCamera'));
+
+        document.getElementById('removerFoto').addEventListener('click', function () {
+            setFoto(null);
+            document.getElementById('fotoArquivo').value = '';
+            document.getElementById('fotoCamera').value = '';
+        });
+
+        // ===== CONTADOR DE CHARS =====
+        function setupCounter(inputId, counterId) {
+            var el = document.getElementById(inputId);
+            var counter = document.getElementById(counterId);
+            if (!el || !counter) return;
+            var max = el.getAttribute('maxlength') || 999;
+            el.addEventListener('input', function () {
+                counter.textContent = el.value.length + ' / ' + max;
+            });
+        }
+        setupCounter('objetivo', 'objetivoCounter');
+        setupCounter('experiencia', 'expCounter');
+
+        // ===== COLETA DE DADOS =====
+        function getDados() {
+            return {
+                nome: document.getElementById('nome').value.trim() || 'Nome não informado',
+                email: document.getElementById('email').value.trim() || '',
+                telefone: document.getElementById('telefone').value.trim() || '',
+                linkedin: document.getElementById('linkedin').value.trim() || '',
+                cidade: document.getElementById('cidade').value.trim() || '',
+                estado: document.getElementById('estado').value.trim() || '',
+                objetivo: document.getElementById('objetivo').value.trim() || '',
+                experiencia: document.getElementById('experiencia').value.trim() || '',
+                formacao: document.getElementById('formacao').value.trim() || '',
+                habilidades: document.getElementById('habilidades').value.trim() || '',
+                idiomas: document.getElementById('idiomas').value.trim() || '',
+                cursos: document.getElementById('cursos').value.trim() || '',
+                foto: fotoDataURL || null
+            };
+        }
+
+        // ===== VALIDAÇÃO BÁSICA =====
+        function validar() {
+            var nomeVal = document.getElementById('nome').value.trim();
+            var emailVal = document.getElementById('email').value.trim();
+            if (!nomeVal) {
+                alert('Por favor, preencha seu nome completo.');
+                document.getElementById('nome').focus();
+                return false;
+            }
+            if (!emailVal || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
+                alert('Por favor, informe um e-mail válido.');
+                document.getElementById('email').focus();
+                return false;
+            }
+            return true;
+        }
+
+        // ===== GERAR PREVIEW =====
+        function gerarPreview() {
+            if (!validar()) return;
+            var d = getDados();
+            var local = [d.cidade, d.estado].filter(Boolean).join(', ');
+
+            var fotoHtml = d.foto
+                ? '<img src="' + d.foto + '" alt="Foto do candidato" class="foto-circular" />'
+                : '<div class="foto-circular" aria-hidden="true">📷</div>';
+
+            var metaHtml = '';
+            if (d.email) metaHtml += '<span>📧 ' + esc(d.email) + '</span>';
+            if (d.telefone) metaHtml += '<span>📞 ' + esc(d.telefone) + '</span>';
+            if (local) metaHtml += '<span>📍 ' + esc(local) + '</span>';
+            if (d.linkedin) metaHtml += '<span>🔗 ' + esc(d.linkedin) + '</span>';
+            if (d.idiomas) metaHtml += '<span>🗣️ ' + esc(d.idiomas) + '</span>';
+
+            var html = '<div class="cabecalho">' + fotoHtml +
+                '<div class="info-nome"><h2>' + esc(d.nome) + '</h2>' +
+                '<div class="meta">' + metaHtml + '</div></div></div>';
+
+            if (d.objetivo) html += bloco('🎯 Objetivo', esc(d.objetivo));
+            if (d.experiencia) html += bloco('💼 Experiência profissional', esc(d.experiencia));
+            if (d.formacao) html += bloco('🎓 Formação acadêmica', esc(d.formacao));
+            if (d.habilidades) html += bloco('⚡ Habilidades', esc(d.habilidades));
+            if (d.cursos) html += bloco('📚 Cursos e certificações', esc(d.cursos));
+
+            document.getElementById('curriculoPreview').innerHTML = html;
+            var area = document.getElementById('previewArea');
+            area.classList.remove('hidden');
+            area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function bloco(titulo, texto) {
+            return '<div class="bloco"><h3>' + titulo + '</h3><p>' + texto + '</p></div>';
+        }
+
+        // ===== GERAR PDF =====
+        function gerarPDF() {
+            if (!validar()) return;
+            var d = getDados();
+
+            if (!window.jspdf || !window.jspdf.jsPDF) {
+                alert('A biblioteca de PDF ainda está carregando. Aguarde um segundo e tente novamente.');
+                return;
+            }
+
+            var doc = new window.jspdf.jsPDF('p', 'mm', 'a4');
+            var PW = 210, M = 16, y = M;
+
+            function checkPg(h) {
+                if (y + h > 280) { doc.addPage(); y = M; }
+            }
+
+            function drawSection(titulo, texto) {
+                if (!texto) return;
+                var lines = doc.splitTextToSize(texto, PW - 2 * M);
+                var h = lines.length * 5 + 12;
+                checkPg(h);
+                doc.setFontSize(10);
+                doc.setFont(undefined, 'bold');
+                doc.setTextColor(42, 125, 225);
+                doc.text(titulo, M, y);
+                y += 1;
+                doc.setDrawColor(42, 125, 225);
+                doc.setLineWidth(0.3);
+                doc.line(M, y, PW - M, y);
+                y += 4;
+                doc.setFont(undefined, 'normal');
+                doc.setFontSize(9);
+                doc.setTextColor(51, 65, 85);
+                doc.text(lines, M, y);
+                y += lines.length * 5 + 5;
+            }
+
+            // FOTO
+            if (d.foto) {
+                try { doc.addImage(d.foto, 'JPEG', PW - M - 32, M - 2, 32, 32); }
+                catch (e) { /* ignora */ }
+            }
+
+            // CABEÇALHO
+            doc.setFillColor(42, 125, 225);
+            doc.rect(M, y - 2, PW - 2 * M, 10, 'F');
+            doc.setFontSize(17);
+            doc.setFont(undefined, 'bold');
+            doc.setTextColor(255, 255, 255);
+            doc.text(d.nome, PW / 2, y + 5, { align: 'center' });
+            y += 14;
+
+            // CONTATOS
+            var infos = [];
+            if (d.email) infos.push(d.email);
+            if (d.telefone) infos.push(d.telefone);
+            var local = [d.cidade, d.estado].filter(Boolean).join(', ');
+            if (local) infos.push(local);
+            if (d.linkedin) infos.push(d.linkedin);
+            if (d.idiomas) infos.push(d.idiomas);
+
+            if (infos.length) {
+                doc.setFont(undefined, 'normal');
+                doc.setFontSize(8.5);
+                doc.setTextColor(70, 90, 120);
+                var contatoLine = infos.join('  ·  ');
+                var cLines = doc.splitTextToSize(contatoLine, PW - 2 * M);
+                doc.text(cLines, PW / 2, y, { align: 'center' });
+                y += cLines.length * 4.5 + 6;
+            }
+
+            // SEÇÕES
+            drawSection('🎯 OBJETIVO', d.objetivo);
+            drawSection('💼 EXPERIÊNCIA PROFISSIONAL', d.experiencia);
+            drawSection('🎓 FORMAÇÃO ACADÊMICA', d.formacao);
+            drawSection('⚡ HABILIDADES', d.habilidades);
+            drawSection('📚 CURSOS E CERTIFICAÇÕES', d.cursos);
+
+            // RODAPÉ em todas as páginas
+            var totalPages = doc.getNumberOfPages();
+            for (var i = 1; i <= totalPages; i++) {
+                doc.setPage(i);
+                doc.setFontSize(7);
+                doc.setTextColor(180, 190, 210);
+                doc.text('Gerado pelo RD Vitae · rdvitae.com · Página ' + i + ' de ' + totalPages, PW / 2, 289, { align: 'center' });
+            }
+
+            var nomeArquivo = 'curriculo_' + d.nome.toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '') + '.pdf';
+            doc.save(nomeArquivo);
+        }
+
+        // ===== EVENTOS =====
+        document.getElementById('gerarBtn').addEventListener('click', gerarPreview);
+        document.getElementById('baixarPdfBtn').addEventListener('click', gerarPDF);
+        document.getElementById('baixarPdfPreviewBtn').addEventListener('click', gerarPDF);
+        document.getElementById('editarBtn').addEventListener('click', function () {
+            document.getElementById('gerador').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Smooth scroll em todos os links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+            a.addEventListener('click', function (e) {
+                var id = this.getAttribute('href').substring(1);
+                var target = document.getElementById(id);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+    })();
+    </script>
+
+</body>
+</html>
