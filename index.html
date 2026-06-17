@@ -786,10 +786,8 @@
                                 </div>
                                 <div>
                                     <div class="upload-buttons">
-                                        <label for="fotoArquivo">📁 Escolher arquivo</label>
+                                        <label for="fotoArquivo">📁 Escolher foto</label>
                                         <input type="file" id="fotoArquivo" accept="image/jpeg,image/png,image/webp,image/gif" aria-label="Selecionar foto do arquivo" />
-                                        <label for="fotoCamera">📷 Abrir câmera</label>
-                                        <input type="file" id="fotoCamera" accept="image/*" capture aria-label="Tirar foto com câmera" />
                                         <button type="button" class="btn-remover-foto" id="removerFoto" aria-label="Remover foto">Remover</button>
                                     </div>
                                     <p class="foto-hint">JPG, PNG ou WEBP · Máx. 5 MB · Recomendado: fundo neutro</p>
@@ -1137,12 +1135,10 @@
             });
         }
         handleFotoInput(document.getElementById('fotoArquivo'));
-        handleFotoInput(document.getElementById('fotoCamera'));
 
         document.getElementById('removerFoto').addEventListener('click', function () {
             setFoto(null);
             document.getElementById('fotoArquivo').value = '';
-            document.getElementById('fotoCamera').value = '';
         });
 
         // ===== CONTADOR DE CHARS =====
