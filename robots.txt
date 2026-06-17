@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Não indexar assets desnecessários
+Disallow: /favicon-32x32.png
+Disallow: /favicon-16x16.png
+
+Sitemap: https://rdvitae.com/sitemap.xml
