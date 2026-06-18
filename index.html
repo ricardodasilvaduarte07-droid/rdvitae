@@ -711,20 +711,7 @@ function downloadPDF() {
   setTimeout(function(){ w.print(); }, 800);
 }
 
-// INIT com exemplos
-addExp();
-addEdu();
-addSkill();
-document.querySelector('.skill-name').value = 'JavaScript';
-document.querySelector('.skill-range').value = 85;
-document.querySelector('.skill-pct').textContent = '85%';
-addSkill();
-var sn = document.querySelectorAll('.skill-name');
-var sr = document.querySelectorAll('.skill-range');
-var sp = document.querySelectorAll('.skill-pct');
-sn[1].value = 'Node.js'; sr[1].value = 75; sp[1].textContent = '75%';
-addIdioma();
-document.querySelector('.f-idioma-nome').value = 'Inglês';
+// INIT vazio
 updatePreview();
 </script>
 </body>
